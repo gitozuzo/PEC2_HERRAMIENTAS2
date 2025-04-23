@@ -1,0 +1,34 @@
+.galeria-ediciones {
+  justify-content: space-between;
+
+  .img-wrapper {
+    flex: 1 1 30%;
+    max-width: 100%;
+    min-width: $gallery-img-min-width;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: $gallery-img-aspect-ratio;
+      object-fit: cover;
+      border-radius: $gallery-img-radius;
+      box-shadow: $gallery-img-shadow;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.02);
+      box-shadow: $gallery-img-shadow-hover;
+      filter: $gallery-img-filter-hover;
+    }
+  }
+
+  .img-wrapper:has(img[alt*="destacada"]) {
+    box-shadow: 0 0 0 3px color(display-p3 0 0.7 0.2 / 0.5);
+  }
+
+  :is(.gallery-img:hover, .gallery-img:focus-visible) {
+    outline: none;
+    filter: $gallery-img-filter-hover;
+  }
+}

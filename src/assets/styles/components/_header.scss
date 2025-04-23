@@ -1,0 +1,72 @@
+.header {
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 0 0 10px $color-shadow;
+
+  &__inner {
+    max-width: $max-width-container;
+    margin: 0 auto;
+    padding: 0 $padding-container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: $font-logo;
+    color: $color-success;
+    font-size: $font-size-logo;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $gap-nav-links;
+
+    .nav__link {
+      color: $color-dark;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-success;
+      }
+
+      &.active {
+        color: $color-success;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.custom-offcanvas {
+  background-color: $color-white;
+  width: 280px;
+
+  .offcanvas-title {
+    font-size: $font-size-nav-title;
+  }
+
+  .btn-close {
+    filter: invert(0.5);
+    opacity: 0.7;
+  }
+
+  .nav__link {
+    color: $color-gray;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      color: $color-success;
+      transform: translateX(5px);
+    }
+
+    &.active {
+      color: $color-success;
+      font-weight: 600;
+    }
+  }
+}

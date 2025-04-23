@@ -1,0 +1,78 @@
+.participants {
+  background-color: $participants-bg-color;
+
+  h2 {
+    font-size: $participants-title-size;
+    font-weight: $participants-title-weight;
+  }
+
+  .filters button {
+    border-radius: $filter-btn-radius;
+    padding: $filter-btn-padding;
+    font-weight: $filter-btn-font-weight;
+  }
+
+  .participants-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $participant-card-gap;
+
+    .participant-card {
+      flex: 1 1 $participant-col-lg;
+      max-width: $participant-card-max-width;
+      background: $participants-card-bg;
+      border-radius: $participant-card-radius;
+      overflow: hidden;
+      box-shadow: 0 0 15px $participants-card-shadow;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: $participant-card-shadow-hover;
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: $participant-card-image-height;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .card-body {
+        padding: $participant-card-body-padding;
+        .badge {
+          font-size: $badge-font-size;
+          padding: $badge-padding-y $badge-padding-x;
+          border-radius: $badge-radius;
+          font-weight: $badge-font-weight;
+        }
+
+        .card-title {
+          font-size: $participant-name-size;
+          margin-bottom: $participant-card-title-marginb;
+        }
+
+        .card-subtitle {
+          font-size: $participant-role-size;
+        }
+
+        .card-text {
+          font-size: $participant-description-size;
+          line-height: $participant-description-line-height;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      .participant-card {
+        flex: 1 1 $participant-col-md;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .participant-card {
+        flex: 1 1 $participant-col-sm;
+      }
+    }
+  }
+}

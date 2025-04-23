@@ -1,0 +1,46 @@
+.info-article {
+  article {
+    max-width: $info-max-width;
+    margin: auto;
+
+    .bg-gradient {
+      background: $info-hero-gradient;
+    }
+
+    img {
+      height: $info-hero-img-height;
+      object-fit: cover;
+    }
+
+    h1,
+    h2 {
+      color: $info-heading-color;
+    }
+
+    blockquote {
+      border-left: 4px solid $blockquote-border-color;
+      background-color: $blockquote-bg-color;
+      padding-left: $blockquote-padding-left;
+      margin: $blockquote-margin-y 0;
+      color: $info-blockquote-color;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        font-size: $list-icon-font-size;
+
+        &:has(i.ri-check-line) {
+          font-weight: $list-icon-font-weight;
+          color: $list-icon-color;
+        }
+      }
+    }
+
+    // Pseudo-clases funcionales
+    :is(h2, h3) {
+      scroll-margin-top: 80px;
+    }
+  }
+}

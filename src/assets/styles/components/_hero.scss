@@ -1,0 +1,64 @@
+.hero {
+  min-height: 60vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff 45%, rgba(255, 255, 255, 0) 55%),
+    url("../images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  .hero__layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+    }
+  }
+
+  .hero__content {
+    max-width: 700px;
+
+    @supports (display: grid) {
+      grid-column: span 6;
+    }
+  }
+
+  &__title {
+    font-size: $hero-title-size;
+    margin-bottom: 1rem;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: $hero-subtitle-size;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 1rem;
+    }
+  }
+
+  &__actions a {
+    white-space: nowrap;
+  }
+
+  &__details {
+    font-size: $hero-details-font-size;
+    color: $color-secondary;
+
+    i {
+      color: $color-primary;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+  }
+}

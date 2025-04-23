@@ -1,0 +1,61 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: $scroll-padding-top;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  font-size: $base-font-size;
+  -webkit-font-smoothing: $font-smoothing;
+  line-height: $line-height-base;
+  background-color: $background-color-body;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Formularios y botones */
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: $text-color-base;
+}
+
+/* Listas limpias */
+ul,
+ol {
+  list-style: none;
+}

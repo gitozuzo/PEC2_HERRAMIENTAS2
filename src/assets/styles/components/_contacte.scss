@@ -1,0 +1,40 @@
+.contact-section {
+  .form-control,
+  .form-select {
+    border-radius: $contact-form-radius;
+    padding: $contact-form-padding;
+    background-color: $contact-form-bg;
+    border: none;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $contact-highlight-color;
+    }
+  }
+
+  .btn-success {
+    font-weight: $contact-btn-font-weight;
+    padding: $contact-btn-padding;
+    border-radius: $contact-form-radius;
+  }
+
+  .icon-circle {
+    width: $contact-icon-size;
+    height: $contact-icon-size;
+    background-color: $contact-icon-bg;
+    color: $contact-icon-color;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $contact-icon-radius;
+  }
+
+  .bg-light-success {
+    background-color: $contact-icon-bg !important;
+  }
+
+  .chart-container {
+    position: relative;
+    height: $contact-chart-height;
+    width: 100%;
+  }
+}

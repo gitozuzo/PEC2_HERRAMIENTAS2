@@ -1,0 +1,208 @@
+// ==========================================================
+// VARIABLES: RESET
+// ==========================================================
+
+// Tipografía
+$base-font-size: 100%;
+$line-height-base: 1.6;
+$font-smoothing: antialiased;
+
+// Colores
+$background-color-body: #fff;
+$text-color-base: inherit;
+
+// Scroll
+$scroll-padding-top: 80px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-desktop: 992px;
+
+// ==========================================================
+// VARIABLES INDEX
+// ==========================================================
+
+// Colores principales
+$color-primary: #2e7d32;
+$color-primary-light: rgba(46, 125, 50, 0.1);
+$color-secondary: #555;
+$color-background-light: #f8f9fa;
+$color-text-dark: #1b1b1b;
+$color-text-muted: #6c757d;
+
+// Tipografías
+$font-primary: "Pacifico", cursive;
+$font-base: "system-ui", sans-serif;
+
+// Tamaños
+$max-width-content: 1280px;
+$hero-title-size: 2.8rem;
+$hero-subtitle-size: 1.25rem;
+$highlight-card-title-size: 1.125rem;
+$highlight-card-text-size: 0.95rem;
+$hero-details-font-size: 0.95rem;
+
+// Espaciado
+$section-padding-y: 5rem;
+$card-padding: 1.75rem;
+$highlight-gap: 2rem;
+$border-radius-base: 0.75rem;
+$cta-padding: 2rem;
+
+// Sombra
+$box-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
+$card-shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.12);
+
+// Breakpoints
+$breakpoint-md: 768px;
+
+// Aspect Ratio Galería (corregido como string)
+$gallery-img-aspect-ratio: "4 / 3";
+
+// Otros
+$transition-base: transform 0.2s ease;
+
+// ==========================================================
+// VARIABLES: HEADER
+// ==========================================================
+
+// Colores
+$color-white: #ffffff;
+$color-black: #000000;
+$color-dark: #222;
+$color-light: #f8f9fa;
+$color-success: #2e7d32;
+$color-gray: #333;
+$color-shadow: rgba(0, 0, 0, 0.05);
+
+// Tipografía
+$font-logo: "Pacifico", cursive;
+$font-size-logo: 1.75rem;
+$font-size-nav-title: 1.25rem;
+
+// Breakpoints
+$max-width-container: 1280px;
+$padding-container: 2rem;
+
+// Espaciado
+$gap-nav-links: 2rem;
+$btn-size: 40px;
+
+// ==========================================================
+// VARIABLES: PARTICIPANTES
+// ==========================================================
+
+// Colores
+$participants-bg-color: #f8f9fa;
+$participants-card-bg: #ffffff;
+$participants-card-shadow: rgba(0, 0, 0, 0.05);
+$participants-highlight-text: #28a745;
+$participants-subtitle-color: #6c757d;
+
+// Tipografías
+$participants-title-size: 2rem;
+$participants-title-weight: 700;
+
+$participant-name-size: 1.25rem;
+$participant-role-size: 0.9rem;
+$participant-description-size: 0.95rem;
+$participant-description-line-height: 1.5;
+
+$participant-card-body-padding: 1.5rem;
+$participant-card-title-marginb: 0.5rem;
+
+// Badges
+$badge-font-size: 0.8rem;
+$badge-padding-y: 0.4em;
+$badge-padding-x: 0.8em;
+$badge-radius: 1rem;
+$badge-font-weight: 500;
+
+// Grid
+$participant-card-max-width: 400px;
+$participant-card-gap: 2rem;
+$participant-card-radius: 0.75rem;
+$participant-card-shadow-hover: translateY(-5px);
+$participant-card-image-height: 280px;
+
+// Botones de filtros
+$filter-btn-radius: 999px;
+$filter-btn-padding: 0.5rem 1.5rem;
+$filter-btn-font-weight: 500;
+
+// Breakpoints para columnas responsivas
+$participant-col-lg: calc(33.333% - #{$participant-card-gap});
+$participant-col-md: calc(50% - #{$participant-card-gap});
+$participant-col-sm: 100%;
+
+// ==========================================================
+// VARIABLES: INFORMACIÓN
+// ==========================================================
+
+// Estructura general
+$info-max-width: 900px;
+$info-padding-y: 5rem;
+$info-padding-x: 2rem;
+
+// Tipografía
+$info-heading-color: #1b1b1b;
+$info-heading-font-weight: 700;
+$info-blockquote-color: #212529;
+$info-body-font-size: 1rem;
+
+// Imagen principal
+$info-hero-img-height: 400px;
+$info-hero-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+
+// Blockquote
+$blockquote-border-color: #28a745;
+$blockquote-bg-color: #f8f9fa;
+$blockquote-padding-left: 1rem;
+$blockquote-margin-y: 1.5rem;
+
+// Listado con íconos
+$list-icon-color: #28a745;
+$list-icon-font-size: 1rem;
+$list-icon-font-weight: 500;
+
+// Botón CTA
+$info-cta-bg: #28a745;
+$info-cta-text-color: #ffffff;
+$info-cta-padding-y: 0.75rem;
+$info-cta-padding-x: 2.5rem;
+$info-cta-border-radius: 0.5rem;
+
+// Espaciado general
+$info-section-gap: 2.5rem;
+
+// ==========================================================
+// VARIABLES: PÁGINA DE CONTACTO
+// ==========================================================
+
+// Colores personalizados
+$contact-form-bg: #f9f9f9;
+$contact-icon-bg: #e6f4ea;
+$contact-icon-color: #2e7d32;
+$contact-highlight-color: hwb(140 20% 30%);
+$contact-chart-height: 250px;
+$contact-preguntas-bg: #f8f9fa;
+
+// Formulario
+$contact-form-radius: 0.5rem;
+$contact-form-padding: 0.75rem;
+$contact-btn-font-weight: 500;
+$contact-btn-padding: 0.75rem;
+
+// Iconos
+$contact-icon-size: 40px;
+$contact-icon-radius: 50%;
+
+// Galería
+$gallery-img-radius: 1rem;
+$gallery-img-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+$gallery-img-shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.12);
+$gallery-img-filter-hover: brightness(1.05);
+
+// Responsive
+$gallery-img-aspect-ratio: "4 / 3";
+$gallery-img-min-width: 280px;
