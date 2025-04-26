@@ -13,10 +13,9 @@
   }
 
   .participants-grid {
-    display: flex;
+    @include flexbox(center, flex-start, $participant-card-gap);
     flex-wrap: wrap;
-    justify-content: center;
-    gap: $participant-card-gap;
+    container-type: inline-size;
 
     .participant-card {
       flex: 1 1 $participant-col-lg;
@@ -40,6 +39,7 @@
 
       .card-body {
         padding: $participant-card-body-padding;
+
         .badge {
           font-size: $badge-font-size;
           padding: $badge-padding-y $badge-padding-x;
@@ -63,15 +63,10 @@
       }
     }
 
-    @media (max-width: 992px) {
+    @container (max-width: 600px) {
       .participant-card {
-        flex: 1 1 $participant-col-md;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .participant-card {
-        flex: 1 1 $participant-col-sm;
+        flex: 1 1 100%;
+        max-width: 100%;
       }
     }
   }

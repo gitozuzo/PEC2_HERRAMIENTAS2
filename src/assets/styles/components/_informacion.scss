@@ -2,6 +2,7 @@
   article {
     max-width: $info-max-width;
     margin: auto;
+    container-type: inline-size;
 
     .bg-gradient {
       background: $info-hero-gradient;
@@ -38,9 +39,23 @@
       }
     }
 
-    // Pseudo-clases funcionales
     :is(h2, h3) {
       scroll-margin-top: 80px;
+    }
+
+    @container (max-width: 600px) {
+      img {
+        height: 200px;
+        object-fit: contain;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }

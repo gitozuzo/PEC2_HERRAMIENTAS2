@@ -1,4 +1,5 @@
 .galeria-ediciones {
+  container-type: inline-size;
   justify-content: space-between;
 
   .img-wrapper {
@@ -9,6 +10,7 @@
     img {
       width: 100%;
       height: auto;
+      max-height: 60svh;
       aspect-ratio: $gallery-img-aspect-ratio;
       object-fit: cover;
       border-radius: $gallery-img-radius;
@@ -30,5 +32,16 @@
   :is(.gallery-img:hover, .gallery-img:focus-visible) {
     outline: none;
     filter: $gallery-img-filter-hover;
+  }
+
+  @container (max-width: 500px) {
+    .img-wrapper {
+      flex: 1 1 100%;
+
+      img {
+        max-height: 40svh;
+        border-radius: rem(8);
+      }
+    }
   }
 }

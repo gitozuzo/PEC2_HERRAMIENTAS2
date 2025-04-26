@@ -2,6 +2,7 @@
   width: 100%;
   background-color: $color-white;
   box-shadow: 0 0 10px $color-shadow;
+  container-type: inline-size;
 
   &__inner {
     max-width: $max-width-container;
@@ -36,6 +37,20 @@
         color: $color-success;
         font-weight: 600;
       }
+    }
+  }
+
+  @container (max-width: 600px) {
+    &__inner {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    &__nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
     }
   }
 }

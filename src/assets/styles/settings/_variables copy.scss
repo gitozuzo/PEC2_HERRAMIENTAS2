@@ -1,30 +1,3 @@
-// Colores
-$color-primary: #2e7d32;
-$color-green: #28a745;
-$color-primary-light: rgba(46, 125, 50, 0.1);
-$color-secondary: #555;
-$color-text-dark: #1b1b1b;
-$color-text-block: #212529;
-$color-text-muted: #6c757d;
-$color-white: #ffffff;
-$color-black: #000000;
-$color-dark: #222;
-$color-light: #f8f9fa;
-$color-light-form: #f9f9f9;
-$color-light-icon: #e6f4ea;
-$color-background-light: $color-light;
-$color-success: $color-primary;
-$color-gray: #333;
-$color-shadow: rgba(0, 0, 0, 0.05);
-
-// Breakpoints
-$breakpoint-mobile: 768px;
-$breakpoint-desktop: 992px;
-
-// Tipografías
-$font-primary: "Pacifico", cursive;
-$font-base: "system-ui", sans-serif;
-
 // ==========================================================
 // VARIABLES: RESET
 // ==========================================================
@@ -35,15 +8,31 @@ $line-height-base: 1.6;
 $font-smoothing: antialiased;
 
 // Colores
-$background-color-body: $color-white;
+$background-color-body: #fff;
 $text-color-base: inherit;
 
 // Scroll
 $scroll-padding-top: 80px;
 
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-desktop: 992px;
+
 // ==========================================================
 // VARIABLES INDEX
 // ==========================================================
+
+// Colores principales
+$color-primary: #2e7d32;
+$color-primary-light: rgba(46, 125, 50, 0.1);
+$color-secondary: #555;
+$color-background-light: #f8f9fa;
+$color-text-dark: #1b1b1b;
+$color-text-muted: #6c757d;
+
+// Tipografías
+$font-primary: "Pacifico", cursive;
+$font-base: "system-ui", sans-serif;
 
 // Tamaños
 $max-width-content: 1280px;
@@ -64,7 +53,10 @@ $cta-padding: 2rem;
 $box-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
 $card-shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.12);
 
-// Aspect Ratio Galería
+// Breakpoints
+$breakpoint-md: 768px;
+
+// Aspect Ratio Galería (corregido como string)
 $gallery-img-aspect-ratio: "4 / 3";
 
 // Otros
@@ -73,6 +65,15 @@ $transition-base: transform 0.2s ease;
 // ==========================================================
 // VARIABLES: HEADER
 // ==========================================================
+
+// Colores
+$color-white: #ffffff;
+$color-black: #000000;
+$color-dark: #222;
+$color-light: #f8f9fa;
+$color-success: #2e7d32;
+$color-gray: #333;
+$color-shadow: rgba(0, 0, 0, 0.05);
 
 // Tipografía
 $font-logo: "Pacifico", cursive;
@@ -92,11 +93,11 @@ $btn-size: 40px;
 // ==========================================================
 
 // Colores
-$participants-bg-color: $color-light;
-$participants-card-bg: $color-white;
-$participants-card-shadow: $color-shadow;
-$participants-highlight-text: $color-green;
-$participants-subtitle-color: $color-text-muted;
+$participants-bg-color: #f8f9fa;
+$participants-card-bg: #ffffff;
+$participants-card-shadow: rgba(0, 0, 0, 0.05);
+$participants-highlight-text: #28a745;
+$participants-subtitle-color: #6c757d;
 
 // Tipografías
 $participants-title-size: 2rem;
@@ -144,9 +145,9 @@ $info-padding-y: 5rem;
 $info-padding-x: 2rem;
 
 // Tipografía
-$info-heading-color: $color-text-dark;
+$info-heading-color: #1b1b1b;
 $info-heading-font-weight: 700;
-$info-blockquote-color: $color-text-block;
+$info-blockquote-color: #212529;
 $info-body-font-size: 1rem;
 
 // Imagen principal
@@ -154,19 +155,19 @@ $info-hero-img-height: 400px;
 $info-hero-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 
 // Blockquote
-$blockquote-border-color: $color-green;
-$blockquote-bg-color: $color-light;
+$blockquote-border-color: #28a745;
+$blockquote-bg-color: #f8f9fa;
 $blockquote-padding-left: 1rem;
 $blockquote-margin-y: 1.5rem;
 
 // Listado con íconos
-$list-icon-color: $color-green;
+$list-icon-color: #28a745;
 $list-icon-font-size: 1rem;
 $list-icon-font-weight: 500;
 
 // Botón CTA
-$info-cta-bg: $color-green;
-$info-cta-text-color: $color-white;
+$info-cta-bg: #28a745;
+$info-cta-text-color: #ffffff;
 $info-cta-padding-y: 0.75rem;
 $info-cta-padding-x: 2.5rem;
 $info-cta-border-radius: 0.5rem;
@@ -179,12 +180,12 @@ $info-section-gap: 2.5rem;
 // ==========================================================
 
 // Colores personalizados
-$contact-form-bg: $color-light-form;
-$contact-icon-bg: $color-light-icon;
-$contact-icon-color: $color-primary;
+$contact-form-bg: #f9f9f9;
+$contact-icon-bg: #e6f4ea;
+$contact-icon-color: #2e7d32;
 $contact-highlight-color: hwb(140 20% 30%);
 $contact-chart-height: 250px;
-$contact-preguntas-bg: $color-light;
+$contact-preguntas-bg: #f8f9fa;
 
 // Formulario
 $contact-form-radius: 0.5rem;

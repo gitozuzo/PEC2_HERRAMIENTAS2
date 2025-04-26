@@ -8,6 +8,8 @@
   background-size: cover;
 
   .hero__layout {
+    container-type: inline-size;
+    container-name: heroLayout;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,21 +30,13 @@
   }
 
   &__title {
-    font-size: $hero-title-size;
     margin-bottom: 1rem;
-
-    @media (max-width: $breakpoint-md) {
-      font-size: 2rem;
-    }
+    @include responsive-text(font-size, $hero-title-size, 2rem);
   }
 
   &__subtitle {
-    font-size: $hero-subtitle-size;
     margin-bottom: 1.5rem;
-
-    @media (max-width: $breakpoint-md) {
-      font-size: 1rem;
-    }
+    @include responsive-text(font-size, $hero-subtitle-size, 1rem);
   }
 
   &__actions a {
@@ -51,13 +45,27 @@
 
   &__details {
     font-size: $hero-details-font-size;
-    color: $color-secondary;
+    color: $color-gray;
 
     i {
       color: $color-primary;
     }
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  @container heroLayout (max-width: 700px) {
+    .hero__title {
+      font-size: 1.8rem;
+    }
+
+    .hero__subtitle {
+      font-size: 1rem;
+    }
+
+    .hero__details {
       flex-direction: column;
     }
   }

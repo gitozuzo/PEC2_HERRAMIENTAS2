@@ -1,0 +1,23 @@
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin responsive-text($prop, $desktop, $mobile) {
+  #{$prop}: $desktop;
+
+  @media (max-width: $breakpoint-mobile) {
+    #{$prop}: $mobile;
+  }
+}
+
+@mixin flexbox($justify: flex-start, $align: stretch, $gap: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $gap {
+    gap: $gap;
+  }
+}

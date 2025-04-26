@@ -2,22 +2,21 @@
   background-color: $color-background-light;
 
   .icon-circle {
-    width: 48px;
-    height: 48px;
+    @include circle(48px);
     background-color: $color-primary-light;
     color: $color-primary;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
   }
 
   .highlights-grid {
-    display: flex;
+    container-type: inline-size;
+    container-name: highlightsGrid;
+
+    @include flexbox(center, stretch, $highlight-gap);
     flex-wrap: wrap;
-    gap: $highlight-gap;
-    justify-content: center;
 
     @supports (display: grid) {
       display: grid;
@@ -26,7 +25,7 @@
     }
 
     .highlight-card {
-      background: white;
+      background: $color-white;
       border-radius: $border-radius-base;
       padding: $card-padding;
       box-shadow: $box-shadow-soft;
@@ -47,8 +46,23 @@
 
       p {
         margin: 0;
-        color: $color-secondary;
+        color: $color-gray;
         font-size: $highlight-card-text-size;
+      }
+    }
+
+    @container highlightsGrid (max-width: 600px) {
+      .highlight-card {
+        gap: 0.5rem;
+        padding: 1rem;
+      }
+
+      .highlight-card .title {
+        font-size: 1.2rem;
+      }
+
+      .highlight-card p {
+        font-size: 0.9rem;
       }
     }
   }
@@ -58,11 +72,8 @@
     background-color: rgba(46, 125, 50, 0.05);
     border-radius: 1rem;
     padding: $cta-padding;
-    display: flex;
+    @include flexbox(space-between, center, 2rem);
     flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
 
     @supports (display: grid) {
       display: grid;
@@ -87,7 +98,7 @@
       }
     }
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
       text-align: center;
 
